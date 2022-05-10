@@ -1,0 +1,25 @@
+#include "/home/chrollo/st/themes/gruvbox-material.Xresources"
+
+xterm*selectToClipboard: true
+xterm*disallowedWindowOps: 20,21,SetXProp
+*.font:	UbuntuMono Nerd Font:pixelsize=20:antialias=true:autohint=true;
+*.fontalt0:JetBrainsMono Nerd Font Mono:pixelsize=24:antialias=true:autohint=true;
+/* *.fontalt1:JoyPixels:pixelsize=24:antialias=true:autohint=true; */
+*.alpha: 1
+
+
+Xft.autohint: 1
+Xft.antialias: 1
+Xft.hinting: false
+Xft.hintstyle: hintslight
+Xft.dpi: 94
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+URxvt*allow_bold: true
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.cursorUnderline: true
+URxvt.font: xft: JetBrainsMono Nerd Font:size=20
+URxvt.boldFont: xft: JetBrainsMono Nerd Font:Bold:size=10
+XTerm*faceName: JetBrainsMono Nerd Font:size=10:antialias=true
+

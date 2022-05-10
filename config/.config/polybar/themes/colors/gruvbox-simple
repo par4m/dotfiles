@@ -1,0 +1,17 @@
+# Gruvbox / Sayo colors for Simple Config
+[colors]
+background = #282828
+foreground = #abb2bf
+alert = #bd2c40
+volume-min = #a3be8c
+volume-med = #ebcb8b
+volume-max = #bf616a
+bg2 = #282828
+bg1 = #282828
+fgg = #BDAE93
+fgg2 = #BDAE93
+fgg1 = #BDAE93
+
+
+
+# vim:ft=dosini

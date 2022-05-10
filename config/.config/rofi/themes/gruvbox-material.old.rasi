@@ -1,0 +1,7 @@
+/* Gruvbox Material / Sayo */
+configuration {
+color-normal: "#282828, #a89984, #282828, #937F74, #282828";
+color-urgent: "#171717, #937F74, #171717, #937F74, #171717";
+color-active: "#171717, #98918D, #171717, #937F74, #171717";
+color-window: "#282828, #504945, #282828";
+}

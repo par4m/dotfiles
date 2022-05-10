@@ -1,0 +1,323 @@
+# vim: filetype=i3config
+
+#### BORDERS
+# smart_borders on
+smart_gaps on
+set $terminal st
+set $browser firefox
+for_window [class=".*"] border pixel 4
+
+
+
+
+
+## SET DEFAULTS
+set $mod3 Control
+set $mod Mod4
+set $mod2 Mod1
+bindsym $mod2+Tab focus right
+bindsym $mod+Tab workspace back_and_forth
+# font pango: Terminus 8
+
+font pango:Terminus 6
+
+
+
+
+### VOLUME ETC
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+
+
+# Application Shortcuts
+bindsym $mod+Return exec --no-startup-id st
+bindsym $mod+Shift+Return exec --no-startup-id kitty
+# bindsym $mod+Shift+x exec ~/Downloads/vnote
+bindsym --release $mod+z exec --no-startup-id rofi -show drun -modi drun  -drun-use-desktop-cache -no-lazy-grab 
+# bindsym --release $mod+Shift+z exec maim -s --hidecursor --format=png /dev/stdout | xclip -selection clipboard -t image/png -i
+bindsym $mod2+Shift+l exec --no-startup-id betterlockscreen -l
+
+
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+
+## NOTES SCREENSHOTS
+# bindsym $mod+Shift+s exec --no-startup-id maim -s --hidecursor --format=png $HOME/Desktop/Notes/Maths_Unplugged/`date +%Y-%m-%d_%H:%M:%S`.png
+# bindsym $mod+Shift+a exec --no-startup-id maim -s --hidecursor --format=png $HOME/Desktop/Notes/Maths_MT/`date +%Y-%m-%d_%H:%M:%S`.png
+
+
+# Scripts Etc ($home/.local/bin/scripts)
+# bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+# bindsym $mod+c exec --no-startup-id configs
+# bindsym $mod+q exec --no-startup-id books
+# bindsym $mod+b exec --no-startup-id praveen
+
+# bindsym $mod2+e exec --no-startup-id emojis
+bindsym $mod+Shift+z exec --no-startup-id screenshot
+# bindsym $mod+Shift+d exec --no-startup-id dtest
+# bindsym $mod+x exec --no-startup-id xrdb -merge ~/.Xresources
+
+
+
+
+
+# change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+for_window [all] title_window_icon padding 2px
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# switch to workspace
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9 
+bindsym $mod+0 workspace $ws10
+
+########## SPOTIFY ##########
+bindsym $mod+Shift+v exec --no-startup-id LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify
+
+### Media Control ###
+bindsym $mod3+Left exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.playerctld /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym $mod3+Right exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.playerctld /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym $mod3+space exec --no-startup-id playerctl play-pause
+
+
+
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+##################################################################################
+
+# Set Colors
+set $hc-color #FFFFFF
+set $bg-color #262626
+set $sc-color #FFFFFF
+set $fg-color #FFFFFF
+# Black + DarkGrey
+set $color0   #262626
+set $color8   #928374
+# DarkRed + Red
+set $color1   #cc241d
+set $color9   #fb4934
+# DarkGreen + Light Green
+set $color2   #98971a
+set $color10  #b8bb26
+# DarkYellow + Yellow
+set $color3   #d79921
+set $color11  #fabd2f
+# DarkBlue + Blue
+set $color4   #458588
+set $color12  #83a598
+# DarkMagenta + FFFFFF
+set $color5   #b16286
+set $color13  #d3869b
+# DarkCyan + Cyan
+set $color6   #689d6a
+set $color14  #8ec07c
+# LightGrey + White
+set $color7   #a89984
+set $color15  #ebdbb2
+# Border
+set $color16 #404040
+
+# set $borderInactive #928374
+set $borderInactive #403a37
+set $borderActive   #504945
+
+client.focused          $borderActive     $borderActive       $borderActive     $borderActive
+client.focused_inactive $borderInactive   $borderInactive     $borderInactive   $borderInactive
+client.unfocused        $borderInactive   $borderInactive     $borderInactive   $borderInactive
+client.urgent           $color9   	  $color9	      $color9    	$color9
+client.background       $bg-color
+
+# Gaps
+gaps inner 10
+gaps outer 10
+
+
+
+# Floating enable 
+for_window [class="Xfce4-terminal"] floating enable
+for_window [class="Spotify"] floating enable
+for_window [instance="URxvt"] floating enable
+for_window [class="Anki" ] tabbed enable
+new_float normal 0
+
+
+
+
+# Window Titles
+for_window [class="Brave-browser"] title_format " brave"
+for_window [class="Code"] title_format " vscode"
+for_window [class="Subl3"] title_format " subl"
+for_window [class="Termite"] title_format " terminal"
+for_window [class="Atom"] title_format " atom"
+for_window [class="Cherrytree"] title_format " cherrytree"
+for_window [class="Zathura"] title_format " zathura"
+for_window [class="Alacritty"] title_format " alacritty"
+for_window [class="Lotion"] title_format " notion"
+for_window [class="firefoxdeveloperedition"] title_format " firefox"			
+for_window [class="install4j-burp-StartBurp"] title_format " burp"
+for_window [class="Microsoft Teams - Preview"] title_format " teams"
+for_window [class="discord"] title_format " discord"
+
+# Specific Window Borders
+
+# for_window [class=firefoxdeveloperedition] border pixel 0
+# for_window [class=kitty] border pixel 0
+# for_window [class=firefox] border pixel 0
+# for_window [class=Spotify] border pixel 0
+
+for_window [class=VNote] border pixel 0
+
+# Window Workspaces
+for_window [class="Spotify"] move to workspace $ws5
+assign [class="firefoxdeveloperedition"] $ws1
+assign [class="install4j-burp-StartBurp"] $ws1
+assign [class="firefox"] $ws1
+assign [class="Termite"] $ws2
+assign [class="Alacritty"] $ws2
+assign [class="St"] $ws2
+assign [class="discord"] $ws6
+assign [class="Chromium"] $ws1
+assign [class="Microsoft Teams - Preview"] $ws6
+assign [class="TelegramDesktop"] $ws6
+assign [class="notion-app-enhanced"] $ws7
+assign [class="YouTube Music"] $ws5
+assign [class="Anki"] $ws8
+assign [class="Zathura"] $ws3
+assign [class="Code"] $ws3
+assign [class="ranger"] $ws4
+assign [class="Thunar"] $ws4
+assign [class="vlc"] $ws4
+assign [class="Xfce4-taskmanager"] $ws10
+assign [class="qimgv"] $ws10
+assign [class="VNote"] $ws3
+assign [class="obsidian"] $ws3
+
+
+
+# Autostart
+# exec_always --no-startup-id picom --experimental-backends 
+# exec_always --no-startup-id xcompmgr
+# exec_always --no-startup-id feh --bg-scale ~/wallpapers/sayo.jpg
+
+exec --no-startup-id fc-cache -fv
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id xrdb ~/.Xresources
+# vim: ft=dosini

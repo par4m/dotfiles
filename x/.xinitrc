@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#while :; do
+#       ssh-agent dwm
+#done
+
+# exec i3
+
+i3
+

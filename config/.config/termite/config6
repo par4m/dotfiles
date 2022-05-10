@@ -1,0 +1,53 @@
+[options]
+font = JetBrains Mono, Medium 11.5
+
+
+[colors]
+# Gurvbox Material Dark
+# Author
+ 
+foreground          = #d4be98
+foreground_bold     = #d4be98
+cursor              = #d4be98
+cursor_foreground   = #292828
+background          = #1D2021
+
+# 16 color space
+
+# Black, Gray, Silver, White
+color0  = #1D2021
+color8  = #928374
+color7  = #d4be98
+color15 = #d4be98
+
+# Red
+color1  = #ea6962
+color9  = #ea6962
+
+# Green
+color2  = #a9b665
+color10 = #a9b665
+
+# Yellow
+color3  = #d8a657
+color11 = #d8a657
+
+# Blue
+color4  = #7daea3
+color12 = #7daea3
+
+# Purple
+color5  = #d3869b
+color13 = #d3869b
+
+# Teal
+color6  = #89b482
+color14 = #89b482
+
+# Extra colors
+color16 = #dc9656
+color17 = #a16946
+color18 = #282828
+color19 = #383838
+color20 = #b8b8b8
+color21 = #e8e8e8

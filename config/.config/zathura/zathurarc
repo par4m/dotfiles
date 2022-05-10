@@ -1,0 +1,27 @@
+include gruvbox-material
+
+# Themes - gruvbox-material , sayo
+
+set window-title-home-tilde true
+set statusbar-basename true
+set selection-clipboard clipboard
+set recolor "true"
+set adjust-open width
+set pages-per-row 1
+set smooth-scroll true
+set selection-clipboard clipboard
+set incremental-search true
+set guioptions ""
+set window-title-home-tilde true
+set window-title-basename true
+set statusbar-home-tilde true
+set show-hidden true
+set window-title-home-tilde true
+set statusbar-basename true
+set selection-clipboard clipboard
+
+
+
+
+
+
