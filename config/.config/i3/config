@@ -213,7 +213,7 @@ set $color0   #262626
 set $color8   #928374
 # DarkRed + Red
 set $color1   #cc241d
-set $color9   #fb4934
+set $color9   #bf616a
 # DarkGreen + Light Green
 set $color2   #98971a
 set $color10  #b8bb26
@@ -247,7 +247,7 @@ client.background       $bg-color
 
 # Gaps
 gaps inner 10
-gaps outer 10
+gaps outer 0
 
 
 
