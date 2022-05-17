@@ -30,9 +30,6 @@ picom -b --experimental-backend
 # start notification daemon
 dunst &
 
-# Fix Audio
-# pulseaudio --check && pulseaudio -D &
-pulseaudio &
 
 # start redshift
 redshift -O 2500 &
@@ -54,11 +51,15 @@ xrdb ~/.Xresources
 
 # network manager applet
 nm-applet &
-
+nmcli radio wifi on &
 
 # volume systray
 volctl &
 
 # start brave
 brave &
+
+# Fix Audio
+# killall pulseaudio
+# pulseaudio &
 
