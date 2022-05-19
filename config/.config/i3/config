@@ -2,7 +2,7 @@
 
 #### BORDERS
 # smart_borders on
-smart_gaps on
+# smart_gaps on
 set $terminal st
 set $browser firefox
 for_window [class=".*"] border pixel 1
@@ -202,92 +202,40 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-###################################################################################
-# solarized accents
-set $yellow #b58900
-set $orange #cb4b16
-set $red #dc322f
-set $magenta #d33682
-set $violet #6c71c4
-set $blue #268bd2
-set $cyan #2aa198
-set $green #859900
-# solarized dark
-set $baseA3 #002b36
-set $baseA2 #073642
-set $baseA1 #586e75
-set $baseA0 #657b83
-set $baseB0 #839496
-set $baseB1 #93a1a1
-set $baseB2 #eee8d5
-set $baseB3 #fdf6e3
-set $custom #1c5766
+# ------------------------------------------------------------------------
 
-# clientclass border backgr. text indicator
-# client.focused #3A3A3A $custom $baseB3 $green $custom
-# client.focused_inactive $baseA2 $baseA2 $baseB2 $green $baseA2
-# client.unfocused $baseA3 $baseA3 $baseB1 $green $baseA3
-# client.urgent $red $red $baseB3 $green $red
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
 bar {
-	colors {
-		background #2a2a2a
-		statusline #bebebe
-		separator #3A3A3A
+  colors {
+    background #2A2A2A
+    statusline #BEBEBE
+    separator  #3A3A3A
 
-		focused_workspace  #3A3A3A #3A3A3A  #bebebe
-		active_workspace   $baseA2 $custom $baseB1
-		inactive_workspace #2a2a2a #282828 $baseB1
-		urgent_workspace   $red $red #bebebe
-	}
+    focused_workspace  #3A3A3A #3A3A3A #BEBEBE
+    active_workspace   #2A2A2A #2A2A2A #BEBEBE
+    inactive_workspace #2A2A2A #2A2A2A #888888
+    urgent_workspace   #2A2A2A #AA9B9B #282828
+    binding_mode       #2A2A2A #900000 #BEBEBE
+  }
 
-	status_command i3status
+  status_command i3status
 	tray_output primary
+
 }
-###################################################################################
-# Set Colors
-set $hc-color #FFFFFF
-set $bg-color #262626
-set $sc-color #FFFFFF
-set $fg-color #FFFFFF
-# Black + DarkGrey
-set $color0   #262626
-set $color8   #928374
-# DarkRed + Red
-set $color1   #cc241d
-set $color9   #bf616a
-# DarkGreen + Light Green
-set $color2   #98971a
-set $color10  #b8bb26
-# DarkYellow + Yellow
-set $color3   #d79921
-set $color11  #fabd2f
-# DarkBlue + Blue
-set $color4   #458588
-set $color12  #83a598
-# DarkMagenta + FFFFFF
-set $color5   #b16286
-set $color13  #d3869b
-# DarkCyan + Cyan
-set $color6   #689d6a
-set $color14  #8ec07c
-# LightGrey + White
-set $color7   #a89984
-set $color15  #ebdbb2
-# Border
-set $color16 #404040
 
-set $borderInactive #928374
-set $borderInactive #403a37
-set $borderActive   #2a2a2a
 
-client.focused          $borderActive     $borderActive       $borderActive     $borderActive
-client.focused_inactive $borderInactive   $borderInactive     $borderInactive   $borderInactive
-client.unfocused        $borderInactive   $borderInactive     $borderInactive   $borderInactive
-client.urgent           $color9   	  $color9	      $color9    	$color9
-client.background       $bg-color
+# class                 border  backgr. text    indicator child_border
+client.focused          #3A3A3A #3A3A3A #BEBEBE #2e9ef4   #585858
+client.focused_inactive #333333 #3A3A3A #BEBEBE #484e50   #222222
+client.unfocused        #333333 #2A2A2A #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #BEBEBE #900000   #900000
+
+
+
+
+
+
+
+# -------------------------------------------------------------------------------
 
 # Gaps
 gaps inner 0
