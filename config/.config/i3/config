@@ -119,7 +119,7 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-for_window [all] title_window_icon on
+for_window [all] title_window_icon off
 
 # focus the child container
 #bindsym $mod+d focus child
