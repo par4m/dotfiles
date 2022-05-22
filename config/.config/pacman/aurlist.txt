@@ -1,4 +1,4 @@
 brave-bin
-neovim-git
 rofi-file-browser-extended-git
 volctl
+j4-dmenu-desktop

@@ -1,4 +1,9 @@
 git
+xsel
+python
+python-pip
+nodejs
+npm
 libnotify
 dunst
 xorg-server	
@@ -21,8 +26,6 @@ i3status
 hsetroot
 feh
 betterlockscreen
-brave-bin
-j4-dmenu-desktop
 zathura
 zathura-cb
 zathura-pdf-mupdf

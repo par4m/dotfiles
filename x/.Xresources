@@ -27,7 +27,7 @@ dmenu.background: #282828
 dmenu.foreground: #a89984
 dmenu.selbackground: #937F74
 dmenu.selforeground: #171717
-dmenu.font: "JetBrainsMono Nerd Font-10"
+/* dmenu.font: "JetBrainsMono Nerd Font-10" */
 
 
 /* st gruvbox-material  */
