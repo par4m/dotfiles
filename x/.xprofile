@@ -53,13 +53,14 @@ xrdb ~/.Xresources
 nm-applet &
 nmcli radio wifi on &
 
+# Fix Audio
+killall pulseaudio
+pulseaudio &
+
 # volume systray
 volctl &
 
 # start brave
 brave &
 
-# Fix Audio
-# killall pulseaudio
-# pulseaudio &
 

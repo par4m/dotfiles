@@ -1,3 +1,4 @@
+base-devel
 git
 xsel
 python
@@ -67,3 +68,18 @@ alacritty
 xorg-xbacklight	
 exfat-utils
 man-db
+prettier
+stylua
+glow
+lazygit
+reflector
+zip
+xterm
+vim
+vi
+qt5ct
+pulseaudio-bluetooth
+pavucontrol
+pulsemixer
+picom
+pasystray

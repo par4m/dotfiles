@@ -2,3 +2,7 @@ brave-bin
 rofi-file-browser-extended-git
 volctl
 j4-dmenu-desktop
+git-delta
+obsidian-appimage
+vscodium-bin
+vscodium-bin-marketplace
