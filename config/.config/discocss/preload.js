@@ -1,7 +1,7 @@
 (() => {
   const fs = require("fs");
-  const confDir = "/home/chrollo/.config/discocss";
-  const cssFile = "/home/chrollo/.config/discocss/custom.css";
+  const confDir = "$HOME/.config/discocss";
+  const cssFile = "$HOME/.config/discocss/custom.css";
 
   function reload(style) {
     style.innerHTML = fs.readFileSync(cssFile);

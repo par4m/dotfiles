@@ -31,7 +31,7 @@
     # screen width minus the width defined in within the geometry option.
     geometry = "0x0-0+0"
 
-    origin = top-right
+    # origin = top-right
 
 
     # Show how many messages are currently hidden (because of geometry).
@@ -127,8 +127,9 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<b>%b</b>"
+    # format = "<b>%b</b>"
 
+    format = "<b>%s</b>\n%b"
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
     alignment = left

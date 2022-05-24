@@ -94,3 +94,5 @@ picom
 pasystray
 awesome
 xfce4-power-manager
+papirus-icon-theme
+arc-gtk-theme
