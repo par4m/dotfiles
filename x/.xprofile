@@ -46,16 +46,16 @@ hsetroot -solid '#282828'
 ~/.local/bin/scripts/remap-keys &
 
 # reload Xresources
-xrdb -merge ~/.Xresources
-xrdb ~/.Xresources
+#xrdb -merge ~/.Xresources
+#xrdb ~/.Xresources
 
 # network manager applet
 nm-applet &
 nmcli radio wifi on &
 
 # Fix Audio
-killall pulseaudio
-pulseaudio &
+# killall pulseaudio
+# pulseaudio && volctl &
 
 # volume systray
 volctl &
@@ -63,4 +63,6 @@ volctl &
 # start brave
 brave &
 
+# reload Xresources
+xrdb ~/.Xresources
 
