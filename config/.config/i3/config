@@ -312,4 +312,5 @@ assign [class="obsidian"] $ws3
 exec --no-startup-id fc-cache -fv
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id xrdb ~/.Xresources
+exec_always --no-startup-id autotiling
 # vim: ft=dosini

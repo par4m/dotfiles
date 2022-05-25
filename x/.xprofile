@@ -1,5 +1,5 @@
 # autotiling
-autotiling &
+# autotiling &
 
 # build font cache
 fc-cache -fv &
