@@ -9,3 +9,4 @@ vscodium-bin-marketplace
 gruvbox-material-gtk-theme-git
 gruvbox-dark-gtk
 autotiling
+watson

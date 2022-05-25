@@ -216,17 +216,18 @@ bar {
     urgent_workspace   #2A2A2A #AA9B9B #282828
     binding_mode       #2A2A2A #900000 #BEBEBE
   }
-
-  status_command i3status
+  font pango:Liberation Mono, FontAwesome 8
+# status_command i3status
+  status_command i3status-rs ~/.config/i3status-rust/config.toml
 	tray_output primary
 
 }
 
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #3A3A3A #3A3A3A #BEBEBE #2e9ef4   #585858
-client.focused_inactive #333333 #3A3A3A #BEBEBE #484e50   #222222
-client.unfocused        #333333 #2A2A2A #888888 #292d2e   #222222
+client.focused          #3A3A3A #3A3A3A #BEBEBE #585858   #585858
+client.focused_inactive #333333 #3A3A3A #BEBEBE #222222   #222222
+client.unfocused        #333333 #2A2A2A #888888 #222222   #222222
 client.urgent           #2f343a #900000 #BEBEBE #900000   #900000
 
 

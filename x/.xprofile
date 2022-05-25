@@ -27,10 +27,6 @@ xset s noblank
 # start compositor 
 picom -b --experimental-backend
 
-# start notification daemon
-dunst &
-
-
 # start redshift
 redshift -O 2500 &
 
@@ -65,4 +61,9 @@ brave &
 
 # reload Xresources
 xrdb ~/.Xresources
+
+
+# start notification daemon
+dunst &
+
 
