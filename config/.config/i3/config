@@ -43,7 +43,7 @@ floating_modifier $mod
 
 # Application Shortcuts
 bindsym $mod+Return exec --no-startup-id st
-bindsym $mod+Shift+Return exec --no-startup-id kitty
+bindsym $mod+Shift+Return exec --no-startup-id kitty --single-instance
 # bindsym $mod+Shift+x exec ~/Downloads/vnote
 bindsym --release $mod+z exec --no-startup-id rofi -show drun -modi drun  -drun-use-desktop-cache -no-lazy-grab 
 # bindsym --release $mod+Shift+z exec maim -s --hidecursor --format=png /dev/stdout | xclip -selection clipboard -t image/png -i
