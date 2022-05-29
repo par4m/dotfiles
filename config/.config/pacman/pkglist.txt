@@ -21,6 +21,8 @@ xorg-apps
 xorg-drivers
 xorg-xkill
 xorg-xinit
+xorg-xrandr
+xorg-xsetroot
 xf86-input-libinput
 alsa-plugins
 alsa-utils
@@ -76,6 +78,7 @@ neofetch
 ntfs-3g
 ntp
 openbsd-netcat
+obsidian
 openssh
 os-prober
 p7zip
@@ -203,11 +206,10 @@ arc-gtk-theme
 awesome 
 lightdm
 lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 lxsession
 rxvt-unicode
 wireless_tools
-lightdm-webkit2-greeter
-lightdm-webkit-theme-litarvan
 gsimplecal
 xautolock
 scrot

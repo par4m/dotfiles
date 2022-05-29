@@ -63,7 +63,7 @@ bindsym $mod+Shift+q kill
 # Scripts Etc ($home/.local/bin/scripts)
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -b -i"
 # bindsym $mod+c exec --no-startup-id configs
-# bindsym $mod+q exec --no-startup-id books
+bindsym $mod+q exec --no-startup-id books
 # bindsym $mod+b exec --no-startup-id praveen
 
 # bindsym $mod2+e exec --no-startup-id emojis
@@ -320,6 +320,9 @@ assign [class="notion-app-enhanced"] $ws7
 # for_window [class="Spotify"] move to workspace $ws5
 assign [class="Spotify"] $ws5
 assign [class="YouTube Music"] $ws5
+for_window [class="Spotify"] move to workspace $ws5
+for_window [class="YouTube Music"] move to workspace $ws5
+
 
 assign [class="Anki"] $ws8
 
