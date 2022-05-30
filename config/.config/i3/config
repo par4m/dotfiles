@@ -61,7 +61,10 @@ bindsym $mod+Shift+q kill
 
 
 # Scripts Etc ($home/.local/bin/scripts)
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -b -i"
+bindsym $mod+d exec --no-startup-id j4-menu
+# bindsym $mod+d exec --no-startup-id dmenu_run -b -fn "Terminus" -bw 1 -c -shf "#B48EAF" -shb "#005577" -nhb "#222222" -nhf "#B48EAF"
+# bindsym $mod+d exec --no-startup-id dmenu_run -b -fn "Terminus" -bw 1
+
 # bindsym $mod+c exec --no-startup-id configs
 bindsym $mod+q exec --no-startup-id books
 # bindsym $mod+b exec --no-startup-id praveen

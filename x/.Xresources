@@ -1,5 +1,6 @@
 xterm*selectToClipboard: true
 xterm*disallowedWindowOps: 20,21,SetXProp
+
 *.font:	UbuntuMono Nerd Font:pixelsize=20:antialias=true:autohint=true;
 *.fontalt0:JetBrainsMono Nerd Font Mono:pixelsize=24:antialias=true:autohint=true;
 /* *.fontalt1:JoyPixels:pixelsize=24:antialias=true:autohint=true; */
@@ -13,26 +14,23 @@ Xft.hintstyle: hintslight
 Xft.dpi: 94
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
-URxvt*allow_bold: true
-URxvt.keysym.Shift-Control-V: eval:paste_clipboard
-URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-URxvt.cursorUnderline: true
-URxvt.font: xft: JetBrainsMono Nerd Font:size=20
-URxvt.boldFont: xft: JetBrainsMono Nerd Font:Bold:size=10
 XTerm*faceName: JetBrainsMono Nerd Font:size=10:antialias=true
 
 
 /* dmenu / j4-dmenu */
-dmenu.background: #282828
+/*dmenu.background: #282828
 dmenu.foreground: #a89984
 dmenu.selbackground: #937F74
-dmenu.selforeground: #171717
+dmenu.selforeground: #171717 */
+
 /* dmenu.font: "JetBrainsMono Nerd Font-10" */
 
 
 /* st gruvbox-material  */
+
 *background: #32302F
 *foreground: #d4be98
+
 #define base00 #32302f
 #define base01 #3a3a3a
 #define base02 #4e4e4e
@@ -49,6 +47,7 @@ dmenu.selforeground: #171717
 #define base0D #729A9A
 #define base0E #9C7A8B
 #define base0F #B96A37
+
 *.foreground:   base05
 #ifdef background_opacity
 *.background:   #32302F
