@@ -10,3 +10,4 @@ gruvbox-material-gtk-theme-git
 gruvbox-dark-gtk
 autotiling
 watson
+skippy-xd-git

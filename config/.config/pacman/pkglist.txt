@@ -23,6 +23,7 @@ xorg-xkill
 xorg-xinit
 xorg-xrandr
 xorg-xsetroot
+libxft-bgra
 xf86-input-libinput
 alsa-plugins
 alsa-utils
@@ -30,6 +31,7 @@ autoconf
 automake
 awesome-terminal-fonts
 bash-completion
+chromium
 bind
 bison
 bluez
@@ -157,7 +159,6 @@ tmux
 ttf-dejavu 
 ttf-liberation 
 noto-fonts
-dmenu
 lxtask
 xclip
 gtk4
@@ -230,3 +231,4 @@ xsettingsd
 obconf
 i3status-rust
 redshift
+pactl

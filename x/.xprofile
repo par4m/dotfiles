@@ -57,7 +57,7 @@ nmcli radio wifi on &
 volctl &
 
 # start brave
-brave &
+# brave &
 
 # reload Xresources
 xrdb ~/.Xresources
