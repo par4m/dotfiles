@@ -11,3 +11,4 @@ gruvbox-dark-gtk
 autotiling
 watson
 skippy-xd-git
+otb-curie

@@ -1,9 +1,13 @@
 xterm*selectToClipboard: true
 xterm*disallowedWindowOps: 20,21,SetXProp
 
-*.font:	UbuntuMono Nerd Font:pixelsize=20:antialias=true:autohint=true;
-*.fontalt0:JetBrainsMono Nerd Font Mono:pixelsize=24:antialias=true:autohint=true;
+*.font:	Terminus:pixelsize=18:antialias=true:autohint=true;
+*.fontalt0: JetBrainsMono Nerd Font:pixelsize=16:antialias=true:autohint=true;
+
+/* *.font:	UbuntuMono Nerd Font:pixelsize=20:antialias=true:autohint=true; */
+/* *.fontalt0:JetBrainsMono Nerd Font Mono:pixelsize=24:antialias=true:autohint=true; */
 /* *.fontalt1:JoyPixels:pixelsize=24:antialias=true:autohint=true; */
+
 *.alpha: 1
 
 
