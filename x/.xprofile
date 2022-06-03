@@ -25,7 +25,7 @@ xset -dpms
 xset s noblank
 
 # start compositor 
-picom -b --experimental-backend
+picom -b --backend glx --experimental-backend &
 
 # start redshift
 redshift -O 2500 &
@@ -66,4 +66,6 @@ xrdb ~/.Xresources
 # start notification daemon
 dunst &
 
+# alt-tab
+alttab &
 

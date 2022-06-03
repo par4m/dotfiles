@@ -232,3 +232,4 @@ obconf
 i3status-rust
 redshift
 pactl
+uthash
