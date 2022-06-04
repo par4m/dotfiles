@@ -31,7 +31,7 @@ picom -b --backend glx --experimental-backend &
 redshift -O 2500 &
 
 # Set wallpaper
-hsetroot -solid '#282828'
+hsetroot -solid '#32302F'
 #feh --bg-scale ~/wallpapers/282828.png &
 # ~/.fehbg &
 
@@ -67,5 +67,6 @@ xrdb ~/.Xresources
 dunst &
 
 # alt-tab
-alttab &
+# alttab &
 
+lxtask &
