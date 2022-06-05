@@ -8,6 +8,7 @@ export PATH="$HOME/.local/bin":$PATH
 export PATH="$HOME/.local/bin/scripts:$PATH"
 export PATH="$HOME/.local/bin/scripts/rofi:$PATH"
 export PATH="$HOME/.local/bin/scripts/dmenu:$PATH"
+export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/share/go/bin:$PATH
 export GOPATH=$HOME/.local/share/go
@@ -29,7 +30,7 @@ export READER="zathura"
 export TERMINAL='st'
 export VISUAL='nvim'
 export EDITOR='nvim'
-export BROWSER="brave"
+export BROWSER="firefox"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANWIDTH=999
 
@@ -40,3 +41,6 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
 # Ghidra fix
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

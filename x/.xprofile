@@ -70,3 +70,10 @@ dunst &
 # alttab &
 
 lxtask &
+
+# emacs daemon
+emacs --daemon &
+
+# thunar daemon
+thunar --daemon &
+thunar &
