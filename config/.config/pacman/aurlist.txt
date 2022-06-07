@@ -12,3 +12,4 @@ autotiling
 watson
 skippy-xd-git
 otb-curie
+cbatticon

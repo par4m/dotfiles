@@ -1,7 +1,4 @@
 #!/bin/bash
-# while true; do dwmblocks; sleep 1s; done &
-# exec dwm
-# exec i3
 
 # build font cache
 fc-cache -fv &
@@ -43,26 +40,11 @@ hsetroot -solid '#32302F'
 ~/.local/bin/scripts/remap-keys &
 
 # network manager applet
-nm-applet &
+# nm-applet &
 nmcli radio wifi on &
-
-# Fix Audio
-# killall pulseaudio
-# pulseaudio && volctl &
-
-# volume systray
-volctl &
-
-# start brave
-# brave &
 
 # start notification daemon
 dunst &
-
-# alt-tab
-# alttab &
-
-# lxtask &
 
 # emacs daemon
 emacs --daemon &
@@ -72,12 +54,12 @@ thunar --daemon &
 
 # reload Xresources
 xrdb ~/.Xresources
-
 xrdbpid=$(pidof xrdb)
-
 # Ensure that xrdb has finished running before moving on to start the WM/DE.
 [ -n "$xrdbpid" ] && wait "$xrdbpid"
 
 # start espanso
 espanso daemon &
 
+# tray apps
+source ~/.local/bin/scripts/tray.sh
