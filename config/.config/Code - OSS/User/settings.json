@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'JetBrains Mono Medium'",
+    "editor.fontWeight": "normal",
+    "terminal.external.linuxExec": "st",
+    "terminal.integrated.fontFamily": "\"JetBrains Mono Medium\"",
+    "terminal.integrated.fontWeight": "normal"
+}

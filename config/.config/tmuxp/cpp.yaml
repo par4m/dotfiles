@@ -1,0 +1,19 @@
+session_name: 'cpp'
+windows:
+- layout: 7685,159x48,0,0[159x32,0,0,0,159x15,0,33,3]
+  options: {}
+  panes:
+  - zsh
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/chrollo/Repos/mooc/learncpp
+  window_name: zsh
+- focus: 'true'
+  layout: c7c2,79x48,0,0[79x32,0,0,1,79x15,0,33,2]
+  options: {}
+  panes:
+  - zsh
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/chrollo/Repos/mooc/TheChernoCpp
+  window_name: zsh

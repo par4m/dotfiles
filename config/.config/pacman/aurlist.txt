@@ -4,8 +4,6 @@ volctl
 j4-dmenu-desktop
 git-delta
 obsidian-appimage
-vscodium-bin
-vscodium-bin-marketplace
 gruvbox-material-gtk-theme-git
 gruvbox-dark-gtk
 autotiling
