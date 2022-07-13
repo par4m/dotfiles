@@ -59,7 +59,7 @@ xrdbpid=$(pidof xrdb)
 [ -n "$xrdbpid" ] && wait "$xrdbpid"
 
 # start espanso
-espanso daemon &
+# espanso daemon &
 
 # tray apps
 source ~/.local/bin/scripts/tray.sh

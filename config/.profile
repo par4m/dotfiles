@@ -35,7 +35,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANWIDTH=999
 
 # qt apps
-export QT_QPA_PLATFORMTHEME=gtk2
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Burp font fix
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
