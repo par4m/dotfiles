@@ -26,7 +26,7 @@ xset s noblank
 picom -b --backend glx --experimental-backend &
 
 # start redshift
-redshift -oP -O 5000K &
+redshift -O 5000K &
 
 # Set wallpaper
 hsetroot -solid '#32302F'
