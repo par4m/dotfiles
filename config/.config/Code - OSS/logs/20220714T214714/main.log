@@ -1,0 +1,4 @@
+[2022-07-14 21:47:15.592] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-07-14 21:47:18.111] [main] [info] Starting extension host with pid 280543 (fork() took 45 ms).
+[2022-07-14 21:49:38.643] [main] [info] Waiting for extension host with pid 280543 to exit.
+[2022-07-14 21:49:38.653] [main] [info] Extension host with pid 280543 exited with code: 0, signal: null.
