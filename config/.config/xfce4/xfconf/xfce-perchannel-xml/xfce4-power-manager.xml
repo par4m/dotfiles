@@ -7,5 +7,7 @@
     <property name="show-tray-icon" type="bool" value="true"/>
     <property name="brightness-step-count" type="uint" value="10"/>
     <property name="general-notification" type="bool" value="true"/>
+    <property name="critical-power-level" type="uint" value="15"/>
+    <property name="critical-power-action" type="uint" value="1"/>
   </property>
 </channel>
