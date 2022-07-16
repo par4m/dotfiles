@@ -63,3 +63,6 @@ xrdbpid=$(pidof xrdb)
 
 # tray apps
 source ~/.local/bin/scripts/tray.sh
+
+# display
+source ~/.local/bin/scripts/display.sh
