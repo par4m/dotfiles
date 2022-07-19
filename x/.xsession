@@ -66,3 +66,6 @@ source ~/.local/bin/scripts/tray.sh
 
 # display
 source ~/.local/bin/scripts/display.sh
+
+# gpu 
+DRI_PRIME=1 glxinfo | grep "OpenGL renderer"

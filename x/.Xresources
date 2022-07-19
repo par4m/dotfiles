@@ -30,7 +30,7 @@ dmenu.selforeground: #171717 */
 /* dmenu.font: "JetBrainsMono Nerd Font-10" */
 
 
-/* st gruvbox-material  */
+/* st gruvbox-material PC */
 
 *background: #32302F
 *foreground: #d4be98
@@ -82,6 +82,62 @@ dmenu.selforeground: #171717 */
 *.color19:      base02
 *.color20:      base04
 *.color21:      base06
+
+
+
+/* st gruvbox-material Laptop */
+
+*background: #32302F
+*foreground: #d4be98
+
+#define base00 #32302f
+#define base01 #3a3a3a
+#define base02 #4e4e4e
+#define base03 #8a8a8a
+#define base04 #949494
+#define base05 #AE9780
+#define base06 #d5c4a1
+#define base07 #B8AF99
+#define base08 #A85757
+#define base09 #C37115
+#define base0A #C18E1C
+#define base0B #95950F
+#define base0C #638C63
+#define base0D #729A9A
+#define base0E #9C7A8B
+#define base0F #B96A37
+
+*.foreground:   base05
+#ifdef background_opacity
+*.background:   #32302F
+#else
+*.background:   base00
+#endif
+*.cursorColor:  base0D
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+*color0:  #928374
+*color8:  #786B63
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
+
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06
+
 
 
 
