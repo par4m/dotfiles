@@ -31,7 +31,7 @@ dmenu.selforeground: #171717 */
 
 
 /* st gruvbox-material PC */
-
+/*
 *background: #32302F
 *foreground: #d4be98
 
@@ -82,7 +82,7 @@ dmenu.selforeground: #171717 */
 *.color19:      base02
 *.color20:      base04
 *.color21:      base06
-
+*/
 
 
 /* st gruvbox-material Laptop */
@@ -95,16 +95,16 @@ dmenu.selforeground: #171717 */
 #define base02 #4e4e4e
 #define base03 #8a8a8a
 #define base04 #949494
-#define base05 #AE9780
+#define base05 #d4be98
 #define base06 #d5c4a1
-#define base07 #B8AF99
-#define base08 #A85757
-#define base09 #C37115
-#define base0A #C18E1C
-#define base0B #95950F
-#define base0C #638C63
-#define base0D #729A9A
-#define base0E #9C7A8B
+#define base07 #d4be98
+#define base08 #ea6962
+#define base09 #d8a657
+#define base0A #e78a4e
+#define base0B #a9b665
+#define base0C #89b482
+#define base0D #7daea3
+#define base0E #d3869b
 #define base0F #B96A37
 
 *.foreground:   base05
@@ -122,8 +122,8 @@ dmenu.selforeground: #171717 */
 *.color5:       base0E
 *.color6:       base0C
 *.color7:       base05
-*color0:  #928374
-*color8:  #786B63
+*color0:  #786D65
+*color8:  #928373
 *.color10:      base0B
 *.color11:      base0A
 *.color12:      base0D
