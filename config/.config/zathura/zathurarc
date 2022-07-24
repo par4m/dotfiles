@@ -1,6 +1,6 @@
-include gruvbox-material
+include gruvbox-light
 
-# Themes - gruvbox-material , sayo
+# Themes - gruvbox-material , sayo , gruvbox-light
 
 set window-title-home-tilde true
 set statusbar-basename true

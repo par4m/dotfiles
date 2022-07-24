@@ -26,11 +26,11 @@ xset s noblank
 picom -b --backend glx --experimental-backend &
 
 # start redshift
-redshift -O 5000K &
+redshift -O 3500K &
 
 # Set wallpaper
-hsetroot -solid '#32302F'
-#feh --bg-scale ~/wallpapers/282828.png &
+# hsetroot -solid '#32302F'
+feh --bg-scale ~/wallpapers/gruvbox/dwm-light.jpg &
 # ~/.fehbg &
 
 # Launch Polybar
