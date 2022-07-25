@@ -1,39 +1,39 @@
 session_name: c-cpp
 windows:
-- layout: f686,159x48,0,0[159x32,0,0,1,159x15,0,33,2]
-  options:
-    automatic-rename: 'off'
-  panes:
-  - zsh
+  - layout: f686,159x48,0,0[159x32,0,0,1,159x15,0,33,2]
+    options:
+      automatic-rename: 'off'
+    panes:
+      - zsh
+      - focus: 'true'
+        shell_command: zsh
+    start_directory: /home/param/Repos/mooc/learncpp
+    window_name: learncpp
+  - layout: f68b,159x48,0,0[159x32,0,0,3,159x15,0,33,4]
+    options:
+      automatic-rename: 'off'
+    panes:
+      - zsh
+      - focus: 'true'
+        shell_command: zsh
+    start_directory: /home/param/Repos/mooc/TheChernoCpp
+    window_name: Cherno
+  - layout: 7693,159x48,0,0[159x32,0,0,6,159x15,0,33,7]
+    options:
+      automatic-rename: 'off'
+    panes:
+      - zsh
+      - focus: 'true'
+        shell_command: zsh
+    start_directory: /home/param/Repos/mooc/cs50
+    window_name: cs50
   - focus: 'true'
-    shell_command: zsh
-  start_directory: /home/chrollo/Repos/mooc/learncpp
-  window_name: learncpp
-- layout: f68b,159x48,0,0[159x32,0,0,3,159x15,0,33,4]
-  options:
-    automatic-rename: 'off'
-  panes:
-  - zsh
-  - focus: 'true'
-    shell_command: zsh
-  start_directory: /home/chrollo/Repos/mooc/TheChernoCpp
-  window_name: Cherno
-- layout: 7693,159x48,0,0[159x32,0,0,6,159x15,0,33,7]
-  options:
-    automatic-rename: 'off'
-  panes:
-  - zsh
-  - focus: 'true'
-    shell_command: zsh
-  start_directory: /home/chrollo/Repos/mooc/cs50
-  window_name: cs50
-- focus: 'true'
-  layout: 7698,159x48,0,0[159x32,0,0,8,159x15,0,33,9]
-  options:
-    automatic-rename: 'off'
-  panes:
-  - focus: 'true'
-    shell_command: zsh
-  - zsh
-  start_directory: /home/chrollo/Repos/mooc/mycodeschool
-  window_name: mcs
+    layout: 7698,159x48,0,0[159x32,0,0,8,159x15,0,33,9]
+    options:
+      automatic-rename: 'off'
+    panes:
+      - focus: 'true'
+        shell_command: zsh
+      - zsh
+    start_directory: /home/param/Repos/mooc/mycodeschool
+    window_name: mcs
