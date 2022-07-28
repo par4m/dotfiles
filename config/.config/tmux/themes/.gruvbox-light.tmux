@@ -8,8 +8,8 @@ set -g message-command-style "fg=#7C6F64,bg=#f2e5bc"
 set -g status-right-style "none"
 set -g status-style "none,fg=#7C6F64,bg=#f2e5bc"
 set -g message-style "fg=#7C6F64,bg=#f2e5bc"
-set -g pane-active-border-style "fg=#504945" # border of active pane
-set -g pane-border-style "fg=#222222"  # border of inactive pane
+set -g pane-active-border-style "fg=#7C6F64" # border of active pane
+set -g pane-border-style "fg=#d2b97a"  # border of inactive pane
 set -g status-right-length "100"
 set -g status-left-length "100"
 setw -g window-status-activity-style "none"

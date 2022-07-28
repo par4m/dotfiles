@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Set wallpaper
+# hsetroot -solid '#32302F'
+feh --bg-scale ~/wallpapers/gruvbox/dwm-light.jpg &
+# ~/.fehbg &
+
 # build font cache
 fc-cache -fv &
 
@@ -28,10 +33,6 @@ picom -b --backend glx --experimental-backend &
 # start redshift
 redshift -O 3500K &
 
-# Set wallpaper
-# hsetroot -solid '#32302F'
-feh --bg-scale ~/wallpapers/gruvbox/dwm-light.jpg &
-# ~/.fehbg &
 
 # Launch Polybar
 # ~/.config/polybar/launch.sh &
