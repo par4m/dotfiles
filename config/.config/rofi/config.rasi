@@ -2,7 +2,7 @@
 configuration {
   modi: "drun,filebrowser,ssh";
   show-icons:         true;
-  icon-theme:         "sayo-dark";
+  icon-theme:         "Papirus-Dark";
   /* xoffset: -1; */
   /* columns: 2; */
   /* width: 25; */
@@ -15,4 +15,4 @@ configuration {
   /* xoffset: -1; */
 }
 
-@theme "gruvbox-material.rasi"
+@theme "Nord.rasi"

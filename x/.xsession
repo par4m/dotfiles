@@ -2,7 +2,8 @@
 
 # Set wallpaper
 # hsetroot -solid '#32302F'
-feh --bg-scale ~/wallpapers/gruvbox/dwm-light.jpg &
+# feh --bg-scale ~/wallpapers/gruvbox/dwm-light.jpg &
+feh --bg-scale ~/wallpapers/nord/underwater.png
 # ~/.fehbg &
 
 # build font cache

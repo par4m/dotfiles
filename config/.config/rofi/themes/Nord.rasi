@@ -12,7 +12,7 @@
    dark3:            #434C5E; 
    dark4:            #7B8394;
 
-   light1:           #D8DEE9;
+   light1:           #bebebe;
 
    background-color:     @dark1;
    border-color:         @dark2;

@@ -1,6 +1,6 @@
-include gruvbox-light
+include nord
 
-# Themes - gruvbox-material , sayo , gruvbox-light
+# Themes - gruvbox-material , sayo , gruvbox-light, nord
 
 set window-title-home-tilde true
 set statusbar-basename true
