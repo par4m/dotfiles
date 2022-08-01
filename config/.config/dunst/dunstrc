@@ -30,10 +30,12 @@
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
     # geometry = "0x0-0+0"
-    # width = 100
-    # height = 50
-    origin = top-right
-    offset = 0x0
+    geometry = "300x1-0+0"
+    # width = 1600
+    # height = 900
+    # origin = top-right
+    scale = 0
+    # offset = 0x0-0x0
 
     # origin = top-right
 
@@ -53,7 +55,7 @@
     # The height of the entire notification.  If the height is smaller
     # than the font height and padding combined, it will be raised
     # to the font height and padding.
-    notification_height = 0
+    # notification_height = 0
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -68,10 +70,13 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
-     frame_color = "#504945" 
+     # frame_color = "#504945" 
+
+     frame_color = "#81A1C1"
+     separator_color = "#bebebe"
 
     # Define a color for the separator.
     # possible values are:
@@ -190,7 +195,7 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/brave
+    browser = /usr/bin/firefox
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -282,26 +287,32 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#2a2a2a"
+    # background = "#2a2a2a"
     # foreground = "#867A70"
-    foreground = "#A89984"
+    # foreground = "#A89984"
+    background = "#2E3440"
+    foreground = "#4C566A"
     timeout = 5
 
     # Icon for notifications with low urgency, uncomment to enable
     icon = ~/.config/dunst/normal.png
 
 [urgency_normal]
-    background = "#2a2a2a"
+    # background = "#2a2a2a"
     # foreground = "#867A70"
-    foreground = "#A89984"
+    # foreground = "#A89984"
+    background = "#2E3440"
+    foreground = "#E5E9F0"
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
     icon = ~/.config/dunst/normal.png
 
 [urgency_critical]
-    background = "#2a2a2a"
-    foreground = "#bdae93"
+    # background = "#2a2a2a"
+    # foreground = "#bdae93"
     frame_color = "#fb4934"
+    background = "#2E3440"
+    foreground = "#ECEFF4"
     timeout = 5
     # Icon for notifications with critical urgency, uncomment to enable
     icon = ~/.config/dunst/critical.png
