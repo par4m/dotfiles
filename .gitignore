@@ -44,3 +44,4 @@ packer_compiled.lua
 timeCost.txt
 .zcompdump*
 .ccls-cache/*
+thunar.xml
