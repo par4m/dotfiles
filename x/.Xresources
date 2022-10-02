@@ -209,7 +209,7 @@ dmenu.selforeground: #171717 */
 
 *.foreground:   nord4
 *.background:   nord0
-*.cursorColor:  nord4
+*.cursorColor:  #81A1C1
 *fading: 35
 *fadeColor: nord3
 

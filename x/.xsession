@@ -32,7 +32,7 @@ xset s noblank
 picom -b --backend glx --experimental-backend &
 
 # start redshift
-redshift -O 3500K &
+# redshift -O 3500K &
 
 
 # Launch Polybar

@@ -291,7 +291,7 @@
     # foreground = "#867A70"
     # foreground = "#A89984"
     background = "#2E3440"
-    foreground = "#4C566A"
+    foreground = "#E5E9F0"
     timeout = 5
 
     # Icon for notifications with low urgency, uncomment to enable
