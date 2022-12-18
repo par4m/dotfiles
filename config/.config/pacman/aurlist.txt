@@ -11,3 +11,4 @@ watson
 skippy-xd-git
 otb-curie
 cbatticon
+networkmanager-dmenu-git

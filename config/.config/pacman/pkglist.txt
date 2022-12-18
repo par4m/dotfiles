@@ -236,3 +236,4 @@ uthash
 luarocks
 emacs
 tmuxp
+xournalpp
