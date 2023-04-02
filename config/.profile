@@ -20,7 +20,7 @@ export PATH=~/.npm-global/bin:$PATH
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
-
+export XDG_DOWNLOAD_DIR="$HOME/Downloads"
 
 # zsh config dir
 export ZDOTDIR=$HOME/.config/zsh
@@ -44,3 +44,5 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
