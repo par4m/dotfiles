@@ -15,4 +15,5 @@ configuration {
   /* xoffset: -1; */
 }
 
-@theme "Nord.rasi"
+/* @theme "Nord.rasi" */
+@theme "catppuccin.rasi"
