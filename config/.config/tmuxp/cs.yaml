@@ -1,0 +1,23 @@
+session_name: cs
+windows:
+  - layout: d140,191x49,0,0,3
+    options: {}
+    panes:
+      - focus: 'true'
+        shell_command: zsh
+    start_directory: /home/param/Repos/mooc/n2t
+    window_name: nand2tetris
+  - layout: d142,191x49,0,0,5
+    options: {}
+    panes:
+      - focus: 'true'
+        shell_command: zsh
+    start_directory: /home/param/Repos/mooc/c
+    window_name: c
+  - layout: d145,191x49,0,0,8
+    options: {}
+    panes:
+      - focus: 'true'
+        shell_command: zsh
+    start_directory: /home/param/Repos/mooc/A2Z
+    window_name: cpp
