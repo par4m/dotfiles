@@ -12,28 +12,25 @@ fc-cache -fv &
 # java apps fix
 wmname LG3D &
 
-
 # set keyboard rate
 xset r rate 300 50
 
-# swap capslock and Esc 
-# setxkbmap -option "caps:swapescape" 
+# swap capslock and Esc
+# setxkbmap -option "caps:swapescape"
 
 # set keyboard layout to us
 setxkbmap -layout us
-
 
 # Don't Randomly Turn off
 xset s off
 xset -dpms
 xset s noblank
 
-# start compositor 
+# start compositor
 picom -b --backend glx --experimental-backend &
 
 # start redshift
 # redshift -O 3500K &
-
 
 # Launch Polybar
 # ~/.config/polybar/launch.sh &
@@ -69,5 +66,8 @@ source ~/.local/bin/scripts/tray.sh
 # display
 source ~/.local/bin/scripts/display.sh
 
-# gpu 
+# gpu
 DRI_PRIME=1 glxinfo | grep "OpenGL renderer"
+
+# Start xautocfg service
+systemctl start --user dwm-session.service

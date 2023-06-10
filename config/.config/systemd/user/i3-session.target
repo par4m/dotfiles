@@ -1,0 +1,12 @@
+# this target is wanted by Dwm-session.service (started by xinitrc config file)
+[Unit]
+Description=Dwm Session
+Requires=basic.target
+BindsTo=graphical-session.target
+Before=graphical-session.target
+
+DefaultDependencies=no
+RefuseManualStart=yes
+RefuseManualStop=yes
+Requires=basic.target
+StopWhenUnneeded=yes

@@ -3,7 +3,7 @@ source "$HOME/.cargo/env"
 # export PATH="$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':')$PATH"
 # export PATH="$PATH:$(du "~/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 
-# PATH 
+# PATH
 export PATH="$HOME/.local/bin":$PATH
 export PATH="$HOME/.local/bin/scripts:$PATH"
 export PATH="$HOME/.local/bin/scripts/rofi:$PATH"
@@ -39,10 +39,14 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Burp font fix
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
+
+# Java Path
+JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export JAVA_HOME
+PATH=$PATH:$JAVA_HOME/bin
+export PATH
 # Ghidra fix
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
