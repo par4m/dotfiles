@@ -70,4 +70,4 @@ source ~/.local/bin/scripts/display.sh
 DRI_PRIME=1 glxinfo | grep "OpenGL renderer"
 
 # Start xautocfg service
-systemctl start --user dwm-session.service
+xautocfg &

@@ -21,3 +21,10 @@ windows:
         shell_command: zsh
     start_directory: /home/param/Repos/mooc/A2Z
     window_name: cpp
+  - layout: d145,191x49,0,0,8
+    options: {}
+    panes:
+      - focus: 'true'
+        shell_command: zsh
+    start_directory: /home/param/Repos/mooc/py
+    window_name: py
