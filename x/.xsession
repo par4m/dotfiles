@@ -27,7 +27,7 @@ xset -dpms
 xset s noblank
 
 # start compositor
-picom -b --backend glx --experimental-backend &
+picom -b --backend glx &
 
 # start redshift
 # redshift -O 3500K &

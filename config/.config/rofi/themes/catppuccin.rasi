@@ -14,7 +14,7 @@
 
    light1:           #bebebe;
    hl:               #3B4252;
-   border:           #B48EAD;
+   border:           #bebebe;
    
    background-selected: @hl;
    background-color:     @dark1;

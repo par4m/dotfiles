@@ -1,4 +1,3 @@
-source "$HOME/.cargo/env"
 # Adds `~/.bin` and all subdirectories to $PATH
 # export PATH="$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':')$PATH"
 # export PATH="$PATH:$(du "~/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
@@ -50,3 +49,4 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+. "$HOME/.cargo/env"

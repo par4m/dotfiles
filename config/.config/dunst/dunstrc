@@ -73,7 +73,8 @@
      # frame_color = "#504945" 
 
      # frame_color = "#81A1C1"
-     frame_color = "#b48ead"
+     # frame_color = "#b48ead"
+     frame_color = "#bebebe"
      separator_color = "#bebebe"
 
     # Define a color for the separator.
