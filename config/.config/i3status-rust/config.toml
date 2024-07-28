@@ -1,10 +1,10 @@
-theme = "native"
+# theme = "native"
 # icons = "awesome"
 
-[icons]
-name = "awesome"
-[icons.overrides]
-time = ""
+# [icons]
+# name = "awesome"
+# [icons.overrides]
+# time = ""
 
 #
 # [[block]]
@@ -36,11 +36,11 @@ time = ""
 # block = "sound"
 #
 
-[[block]]
-block = "time"
-interval = 1
-format = "%a %d/%m %r"
-
-[[block]]
-block = "battery"
-if_command = "test -e /sys/class/power_supply/BAT0"
+# [[block]]
+# block = "time"
+# interval = 1
+# format = "%a %d/%m %r"
+#
+# [[block]]
+# block = "battery"
+# if_command = "test -e /sys/class/power_supply/BAT0"

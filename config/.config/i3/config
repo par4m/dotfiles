@@ -45,7 +45,7 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id st
 bindsym $mod+Shift+Return exec --no-startup-id kitty --single-instance
 # bindsym $mod+Shift+x exec ~/Downloads/vnote
-bindsym --release $mod+z exec --no-startup-id rofi -show drun -modi drun  -drun-use-desktop-cache -no-lazy-grab 
+bindsym --release $mod+z exec --no-startup-id rofi -no-lazy-grab -show drun -modi drun
 # bindsym --release $mod+Shift+z exec maim -s --hidecursor --format=png /dev/stdout | xclip -selection clipboard -t image/png -i
 bindsym $mod2+Shift+l exec --no-startup-id betterlockscreen -l
 
@@ -217,7 +217,6 @@ bindsym $mod+r mode "resize"
 # ------------------------------------------------------------------------
 
 bar {
-  mode hide 
   hidden_state hide
 # Alt(mod2) + Ctrl(mod3)
   modifier $mod2+$mod3 
@@ -235,7 +234,7 @@ bar {
   font pango:Liberation Mono, FontAwesome 8
 # status_command i3status
   status_command i3status-rs ~/.config/i3status-rust/config.toml
-	tray_output primary
+	tray_output HDMI1
 
 }
 
@@ -353,6 +352,7 @@ assign [class="qimgv"] $ws10
 exec --no-startup-id fc-cache -fv
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id xrdb ~/.Xresources
+exec --no-startup-id ~/.xsession
 exec_always --no-startup-id autotiling
 
 # vim: ft=dosini

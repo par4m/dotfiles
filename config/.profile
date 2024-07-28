@@ -50,3 +50,6 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 . "$HOME/.cargo/env"
+
+# JavaFx Path
+export PATH_TO_FX="$HOME/Downloads/javafx-sdk-17.0.8/lib/"

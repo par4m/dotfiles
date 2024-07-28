@@ -27,7 +27,7 @@ xset -dpms
 xset s noblank
 
 # start compositor
-picom -b --backend glx &
+# picom -b --backend glx &
 
 # start redshift
 # redshift -O 3500K &
@@ -46,7 +46,7 @@ nmcli radio wifi on &
 dunst &
 
 # emacs daemon
-emacs --daemon &
+# emacs --daemon &
 
 # thunar daemon
 thunar --daemon &
@@ -67,7 +67,7 @@ source ~/.local/bin/scripts/tray.sh
 source ~/.local/bin/scripts/display.sh
 
 # gpu
-DRI_PRIME=1 glxinfo | grep "OpenGL renderer"
+# DRI_PRIME=1 glxinfo | grep "OpenGL renderer"
 
 # Start xautocfg service
 xautocfg &
